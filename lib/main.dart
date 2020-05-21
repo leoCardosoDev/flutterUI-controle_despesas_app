@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:uicontroledespesasapp/screens/home_screen.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: "Controle Financeiro",
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.green,
       ),
-      
+      home: HomeScreen(),
     );
   }
 }
